@@ -3,7 +3,6 @@ mensaje si la persona es mayor de edad o no. Utilizar para la condición el oper
 const evaluarEdad = () => {
     let input = document.getElementById('edad');
     let edad = parseInt(input.value);
-    console.log(edad);
     let resultado = document.querySelector('#resultadoEvaluacion');
     if (edad !== '' && edad > 0) {
         edad >= 18 ? resultado.innerHTML = 'Es mayor de edad' : resultado.innerHTML = 'Aun no es mayor de edad';
@@ -187,7 +186,6 @@ const calcularTabla = () => {
     let input = parseInt(document.getElementById("numeroTabla").value);
     let tabla = document.querySelector("#resultadoTabla");
     if(input !== '' && input > 0){
-        console.log(input);
         for(let i = 1; i <= 10; i++){
             tabla.innerHTML += `<li> ${i} x ${input} = ${i*input}</li>`; 
         }
