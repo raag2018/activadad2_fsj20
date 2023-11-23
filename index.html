@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad #2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body onload="loader()">
+    <main class="container">
+        <section class="container mt-2 bg-info p-2 border border-3 border-primary rounded">
+            <div class='row'>
+                <div class="col-sm-6">
+                    <input type="number" min="1" max="100" id="edad" name="edad" placeholder="Ingrese la edad a evaluar"
+                        class="form-control mt-2 ">
+                </div>
+                <div class="col-sm-6">
+                    <button id="evaluarEdad" class="btn btn-primary mt-2 ">Verificar si es mayor de edad</button>
+                </div>
+                <div class="col-sm-6"><label for="edad" id="resultadoEvaluacion"></label></div>
+            </div>
+        </section>
+        <section class="container mt-2 bg-info p-2 border border-3 border-primary rounded">
+            <div class='row'>
+                <div class="col-sm-6">
+                    <input type="text" name="nombre" id="nombre" placeholder="ingresar el nombre"
+                        class="form-control mt-2 ">
+                </div>
+                <div class="col-sm-6">
+                    <input type="text" name="carnet" id="carnet" placeholder="ingrese el carnet"
+                        class="form-control mt-2 ">
+                </div>
+                <div class="col-sm-12">
+                    <label for="nombre">Ingrese la nota de las siguientes actividades</label>
+                </div>
+                <div class="col-sm-6">
+                    <input type="number" name="examen" id="examen" placeholder="examen" class="form-control mt-2 ">
+                </div>
+                <div class="col-sm-6">
+                    <input type="number" name="tareas" id="tareas" placeholder="tareas" class="form-control mt-2 ">
+                </div>
+                <div class="col-sm-6">
+                    <input type="number" name="asistencia" id="asistencia" placeholder="asistencia"
+                        class="form-control mt-2 ">
+                </div>
+                <div class="col-sm-6">
+                    <input type="number" name="investigacion" id="investigacion" placeholder="investigacion"
+                        class="form-control mt-2 ">
+                </div>
+                <div class="col-sm-6">
+                    <button id="obtenerCalificaciones" class="btn btn-primary mt-2 ">Obtener resultados</button>
+                </div>
+                <div class="col-sm-12">
+                    <label for="obtenerCalificaciones" id="resultadoCalificaciones"></label>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-2 bg-info p-2 border border-3 border-primary rounded">
+            <div class='row'>
+                <div class="col-sm-6">
+                    <input type="text" name="nombreEmpleado" id="nombreEmpleado" placeholder="ingrese el nombre"
+                        class="form-control mt-2 ">
+                </div>
+                <div class="col-sm-6">
+                    <input type="number" name="salario" id="salario" placeholder="ingrese el salario"
+                        class="form-control mt-2 ">
+                </div>
+                <div class="col-sm-6">
+                    <select name="categoria" id="categoria" class="form-control mt-2">
+                        <option>Seleccione una categoria</option>
+                    </select>
+                </div>
+                <div class="col-sm-6">
+                    <button id="calcularAumento" class="btn btn-primary mt-2 ">Calcular Aumento</button>
+                </div>
+                <div class="col-sm-6">
+                    <label for="calcularAumento" id="resultadoAumento"></label>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-2 bg-info p-2 border border-3 border-primary rounded">
+            <div class='row'>
+                <div class="col-sm-12">
+                    <label for="">Verificar numero Mayor</label>
+                </div>
+                <div class="col-sm-6">
+                    <input type="number" name="numeroA" id="numeroA" placeholder="Primer Numero"
+                        class="form-control mt-2 ">
+                </div>
+                <div class="col-sm-6">
+                    <input type="number" name="numeroB" id="numeroB" placeholder="Segundo Numero"
+                        class="form-control mt-2 ">
+                </div>
+                <div class="col-sm-6">
+                    <button id="calcularNumeroMayor" class="btn btn-primary mt-2 ">Evaluar Numero Mayor</button>
+                </div>
+                <div class="col-sm-6">
+                    <label for="calcularNumeroMayor" id="resultadoNumeroMayor"></label>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-2 bg-info p-2 border border-3 border-primary rounded">
+            <div class='row'>
+                <div class="col-sm-6">
+                    <select name="autos" id="autos" class="form-control mt-2 ">
+                        <option>Seleccione un auto</option>
+                    </select>
+                </div>
+                <div class="col-sm-6">
+                    <img src="https://res.cloudinary.com/dyhftwfrw/image/upload/v1700658911/actividad2/wefnfzcxesicoygml4fi.png"
+                        alt="imagen de auto ford" width="100" height="100" id="imgAuto">
+                </div>
+                <div class="col-sm-6">
+                    <button id="obtenerDescuento" class="btn btn-primary mt-2 ">Obtener Descuento</button>
+                </div>
+                <div class="col-sm-12">
+                    <label for="obtenerDescuento" id="restadoDescuento"></label>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-2 bg-info p-2 border border-3 border-primary rounded">
+            <div class='row'>
+                <div class="col-sm-6">
+                    <select name="origen" id="origen" class="form-control mt-2">
+                        <option>Seleccione el origen</option>
+                    </select>
+                </div>
+                <div class="col-sm-6">
+                    <select name="destino" id="destino" class="form-control mt-2 ">
+                        <option>Seleccione el destino</option>
+                    </select>
+                </div>
+                <div class="col-sm-6">
+                    <button id="evaluarDescuento" class="btn btn-primary mt-2">Verificar descuento</button>
+                </div>
+                <div class="col-sm-6">
+                    <label for="evaluarDescuento" id="resultadoDescuento"></label>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-2 bg-info p-2 border border-3 border-primary rounded">
+            <div class="row">
+                <div class="col-sm-12">
+                    <label for="">Ingresar 10 numeros negativos y/o positivos</label>
+                </div>
+                <div class="col-sm-6">
+                    <input type="number" id="numero" name="numero" class="form-control mt-2">
+                </div>
+                <div class="col-sm-6">
+                    <button id="agregar" class="btn btn-success mt-2">Agregar Datos</button>
+                </div>
+                <div class="col-sm-6">
+                    <ul id="listaDatos">
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <button id="calculosNumericos" class="btn btn-primary mt-2">Verificar Datos numericos</button>
+                </div>
+                <div class="col-sm-6">
+                    <label for="" id="resultadoCalculos"></label>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-2 bg-info p-2 border border-3 border-primary rounded">
+            <div class="row">
+                <div class="col-sm-12">
+                    <label for="">Ingresar un numero para calcular la tabla</label>
+                </div>
+                <div class="col-sm-6">
+                    <input type="number" id="numeroTabla" name="numeroTabla" class="form-control mt-2">
+                </div>
+                <div class="col-sm-6">
+                    <button class="btn btn-primary mt-2" id="calcularTabla">Calcular</button>
+                </div>
+                <div class="col-sm-12">
+                    <ul id="resultadoTabla">
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-2 bg-info p-2 border border-3 border-primary rounded">
+            <div class="row">
+                <div class="col-sm-12">
+                    <label for="">Ingresar la temperatura en centigrados</label>
+                </div>
+                <div class="col-sm-6">
+                    <input type="number" id="temperatura" name="temperatura" class="form-control mt-2">
+                </div>
+                <div class="col-sm-6">
+                    <button class="btn btn-primary mt-2" id="convertirTemperatura">
+                        Calcular temperatura enFarenheit</button>
+                </div>
+                <div class="col-sm-12">
+                    <label for="convertirTemperatura" id="resultadoTemperatura"></label>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-2 bg-info p-2 border border-3 border-primary rounded">
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="">Ingrese la edad del estudiante</label>
+                    <input type="number" id="edadAlumno" name="edadAlumno" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label for="">Seleccione el turno</label>
+                    <select name="turno" id="turno" class="form-control">
+                        <option>Seleccione un turno</option>
+                        <option value="1">Turno mañana</option>
+                        <option value="2">Turno tarde</option>
+                        <option value="3">Turno nocturno</option>
+                    </select>
+                </div>
+                <div class="col-sm-6 mb-2 mt-2">
+                    <button class="btn btn-success" id="agregarAlumno">Agregar Alumno</button>
+                </div>
+                <div class="col-sm-6 mb-2 mt-2">
+                    <button class="btn btn-primary" id="obtenerPromedios">Obtener Promedios</button>
+                </div>
+                <div class="col-sm-12">
+                    <ul id="resultadosPromedios"> 
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
